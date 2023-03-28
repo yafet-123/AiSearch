@@ -6,7 +6,7 @@ export const SearchBar: React.FC= () => {
   const [searchValue, setsearchValue] = useState("")
   const router = useRouter();
   return (
-    <div className="px-2 my-10">
+    <div className="lg:px-2 my-10">
        <div className="flex flex-col justify-center items-center ">
          <input 
            value={searchValue}   
