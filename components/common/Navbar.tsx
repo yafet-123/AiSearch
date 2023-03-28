@@ -5,6 +5,7 @@ import navbarImage from '../../public/vercel.svg';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaPhone } from 'react-icons/fa';
 import { useRouter } from 'next/router';
+import ThemeToggler from '../ThemeToggler';
 
 export const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -36,16 +37,12 @@ export const Navbar: React.FC = () => {
     <nav
       className={` ${
         colorChange ? 'lg:bg-slate-200 ' : 'lg:bg-transparent'
-      } bg-slate-200 w-full  lg:h-[100px] top-0 fixed z-50`}
+      } bg-slate-200 w-full lg:h-[80px] top-0 fixed z-50`}
     >
       <div className="lg:justify-between justify-around lg:px-4 mx-2 lg:mx-10 items-center lg:flex lg:py-[10px] ">
         <div className="flex items-center justify-between py-3">
-          <Link href="/" className="">
-            <Image
-              src={navbarImage}
-              className="w-[150px] h-[60px]"
-              alt="Navbar"
-            />
+          <Link href="/" className="text-3xl font-bold text-[#6471DD] dark:text-[#C1B0EB]">
+            AI Search
           </Link>
           <div className="lg:hidden">
             <button
@@ -78,6 +75,9 @@ export const Navbar: React.FC = () => {
                   </Link>
                 </li>
               ))}
+              <li className="md:ml-6 font-bold md:my-0 my-7">  
+                <ThemeToggler />
+              </li>
             </ul>
           </div>
         </div>
