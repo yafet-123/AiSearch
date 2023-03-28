@@ -5,3 +5,8 @@ export interface HeroContentOne {
   subtitle: String;
   cssStyle: String;
 }
+
+export type CategoryType = {
+  id: String;
+  title: String;
+};
