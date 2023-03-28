@@ -37,7 +37,7 @@ export const Navbar: React.FC = () => {
     <nav
       className={` ${
         colorChange ? 'lg:bg-slate-200 ' : 'lg:bg-transparent'
-      } bg-slate-200 w-full lg:h-[80px] top-0 fixed z-50`}
+      } bg-slate-200 dark:bg-slate-600 w-full lg:h-[80px] top-0 fixed z-50`}
     >
       <div className="lg:justify-between justify-around lg:px-4 mx-2 lg:mx-10 items-center lg:flex lg:py-[10px] ">
         <div className="flex items-center justify-between py-3">

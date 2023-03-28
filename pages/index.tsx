@@ -7,6 +7,7 @@ import { MainHeader } from '../components/common/MainHeader';
 import { Hero } from '../components/home/Hero';
 import { SearchBar } from '../components/home/SearchBar';
 import { Category } from '../components/home/Category';
+import { Footer } from '../components/home/Footer';
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
                 />
                 <SearchBar />
                 <Category />
+                <Footer />
             </section>
         </React.Fragment>
     )

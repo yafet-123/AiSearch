@@ -10,9 +10,9 @@ export const SearchBar: React.FC= () => {
        <div className="flex flex-col justify-center items-center ">
          <input 
            value={searchValue}   
-           placeholder=" Enter Search Term ..."                         
+           placeholder="Enter Search Term ..."                         
            onChange={(e) => setsearchValue(e.target.value)}
-           className="text-black dark:text-white placeholder:font-bold mb-5 lg:mb-0 duration-1000 ease-in-out h-16 focus:w-[90%] lg:focus:w-[60%] w-[80%] lg:w-[50%] bg-white dark:bg-[#1B2637] outline-none md:pl-2 text-sm lg:text-lg border border[#009688] border-l-2 rounded-xl mr-2" 
+           className="px-10 text-black dark:text-white placeholder:font-bold mb-5 lg:mb-0 duration-1000 ease-in-out h-16 focus:w-[90%] lg:focus:w-[60%] w-[80%] lg:w-[50%] bg-white dark:bg-[#1B2637] outline-none md:pl-2 text-sm lg:text-lg border border[#009688] border-l-2 rounded-xl mr-2" 
          />
         <div className="h-16 bg-[#6471DD] dark:bg-[#C1B0EB] hover:bg-opacity-50 text-white dark:text-black lg:px-3 flex items-center justify-center border border[#6471DD] border-l-2 rounded-xl px-5 mt-5">
           <AiOutlineSearch size={20} />
