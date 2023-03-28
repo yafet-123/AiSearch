@@ -1,6 +1,6 @@
 import { CategoryType } from '../types/types';
 
-const CategoryData: CategoryType[] = [
+export const CategoryData: CategoryType[] = [
   {
     id:"1",
     title:"Writing"

@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 import { MainHeader } from '../components/common/MainHeader';
 import { Hero } from '../components/home/Hero';
 import { SearchBar } from '../components/home/SearchBar';
+import { Category } from '../components/home/Category';
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
                     subtitle="Search AI tools for whatever your needs. Simply type in a function like 'music' or 'image editing'. We aim to build the most complete list of AI tools on the market. Stay tuned for more features!" 
                 />
                 <SearchBar />
+                <Category />
             </section>
         </React.Fragment>
     )

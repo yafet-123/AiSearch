@@ -1,17 +1,14 @@
 import React from 'react';
-import { HeroContentOne } from '../../types/types';
+import { CategoryData }  from '../../data/Category'
 
-export const Hero: React.FC = () => {
+export const Category: React.FC<any> = () => {
   return (
-    <div className="flex justify-center items-center lg:px-20" >
-      <div className="flex flex-col gap-8 font-bold text-center md:pt-10">
-        <div>
-          <h1 className="text-3xl lg:text-5xl font-bold text-[#6471DD] dark:text-[#C1B0EB] lg:mb-2">{title}</h1>
-        </div>
-        <div>
-          <p className="text-black dark:text-white text-md md:text-xl m-4 font-normal !leading-9">{subtitle}</p>
-        </div>
-      </div>
+    <div className="flex h-full lg:px-20" >
+      <ul className="flex h-[45rem] flex-col justify-center items-center flex-wrap gap-8 font-bold break-words">
+        { CategoryData?.map((category:any, index:any)=>(
+          <li key={index} className="text-lg lg:text-2xl font-bold text-[#6471DD] dark:text-[#C1B0EB] lg:mb-2">{category.title}</li>
+        ))}
+      </ul>
     </div>
   );
 };
