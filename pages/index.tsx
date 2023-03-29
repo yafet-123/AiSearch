@@ -8,6 +8,7 @@ import { Hero } from '../components/home/Hero';
 import { SearchBar } from '../components/home/SearchBar';
 import { Category } from '../components/home/Category';
 import { Footer } from '../components/home/Footer';
+import { prisma } from '../util/db'
 
 export default function Home() {
     return (
