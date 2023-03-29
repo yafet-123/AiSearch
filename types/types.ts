@@ -6,7 +6,8 @@ export interface HeroContentOne {
   cssStyle: String;
 };
 
-export type CategoryType = {
+export interface CategoryType = {
   id: String;
   title: String;
 };
+ 

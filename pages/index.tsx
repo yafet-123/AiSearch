@@ -8,9 +8,28 @@ import { Hero } from '../components/home/Hero';
 import { SearchBar } from '../components/home/SearchBar';
 import { Category } from '../components/home/Category';
 import { Footer } from '../components/home/Footer';
-import { prisma } from '../util/db'
+import prisma from '../util/db.ts'
+import { CategoryType } from '../types/types';
 
-export default function Home() {
+export async function getServerSideProps(){
+    const categorys = await prisma.Category.findMany({
+        orderBy: {
+            CategoryName: 'asc',
+        },
+    });
+    const formatedCategory = categorys.map((category)=>({
+        category_id:category.category_id,
+        CategoryName:category.CategoryName
+    }))
+    return { 
+        props: {
+            categorys:formatedCategory,
+        } 
+    }
+}
+
+export default function Home({categorys} : { categorys : CategoryType[] }) {
+
     return (
         <React.Fragment>
             <MainHeader title="AI Search : Home" />
@@ -20,7 +39,7 @@ export default function Home() {
                     subtitle="Search AI tools for whatever your needs. Simply type in a function like 'music' or 'image editing'. We aim to build the most complete list of AI tools on the market. Stay tuned for more features!" 
                 />
                 <SearchBar />
-                <Category />
+                <Category categorys={categorys} />
                 <Footer />
             </section>
         </React.Fragment>
