@@ -67,8 +67,8 @@ export const Navbar: React.FC = () => {
                     href={link.path}
                     className={
                       router.pathname == link.path
-                        ? 'border-b-4 border-secondaryColor dark:border-white  text-md font-bold text-secondaryColor dark:text-white'
-                        : 'text-md font-bold text-black dark:text-white hover:border-b-4 border-white  hover:text-secondaryColor'
+                        ? 'border-b-4 border-[#6471DD]  text-md font-bold text-[#6471DD] dark:text-white'
+                        : 'text-md font-bold text-black dark:text-white hover:border-b-4 border-[#6471DD]  hover:text-[#6471DD]'
                     }
                   >
                     {link.name}
