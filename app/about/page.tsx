@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'About Traversy Media',
+  title: 'About Yafet Media',
 };
 
 const AboutPage = () =>{
