@@ -11,10 +11,10 @@ const RepoPage = ({ params: { name } }) => {
       <Link href='/code/repos' className='btn btn-back'>
         Back To Repositories
       </Link>
-      <Suspense fallback={<div>Loading repo...</div>}> 
+      <Suspense fallback={<div className="text-2xl">Loading repo...</div>}> 
         <Repo name={name} />
       </Suspense>
-      <Suspense fallback={<div>Loading directories...</div>}>
+      <Suspense fallback={<div className="text-2xl">Loading directories...</div>}>
         <RepoDirs name={name} />
       </Suspense>
     </div>

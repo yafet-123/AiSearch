@@ -1,7 +1,7 @@
 const TeamPage = () => {
   return (
     <div>
-      <h1>Our Team</h1>
+      <h1 className="text-3xl mb-5">Our Team</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure tenetur
         ducimus laboriosam eaque recusandae tempora enim aut, quae error eum

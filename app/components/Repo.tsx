@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FaStar, FaCodeBranch, FaEye } from 'react-icons/fa';
 
-async function fetchRepo(name) {
+async function fetchRepo(name:string) {
   const response = await fetch(
     `https://api.github.com/repos/yafet-123/${name}`,
     {
@@ -19,20 +19,20 @@ const Repo = async ({ name }) => {
 
   return (
     <>
-      <h2>{repo.name}</h2>
-      <p>{repo.description}</p>
-      <div className='card-stats'>
+      <h2 className="text-5xl font-bold">{repo.name}</h2>
+      <p className="text-lg">{repo.description}</p>
+      <div className='card-stats w-full'>
         <div className='card-stat'>
           <FaStar />
-          <span>{repo.stargazers_count}</span>
+          <span className="font-bold text-xl text-blue-500">{repo.stargazers_count}</span>
         </div>
         <div className='card-stat'>
           <FaCodeBranch />
-          <span>{repo.forks_count}</span>
+          <span className="font-bold text-xl text-blue-500">{repo.forks_count}</span>
         </div>
         <div className='card-stat'>
           <FaEye />
-          <span>{repo.watchers_count}</span>
+          <span className="font-bold text-xl text-blue-500">{repo.watchers_count}</span>
         </div>
       </div>
     </>

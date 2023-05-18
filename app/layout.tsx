@@ -1,11 +1,5 @@
-export const metadata = {
-  title: 'Yafet Media',
-  description: 'Web development tutorials and courses',
-  keywords:
-    'web development, web design, javascript, react, node, angular, vue, html, css',
-}
-
-import '../styles/globals.css'
+import './globals.css';
+import './Home.css';
 import Header from './components/Header';
 import { Poppins } from 'next/font/google';
 
@@ -13,6 +7,13 @@ const poppins = Poppins({
   weight: ['400', '700'],
   subsets: ['latin'],
 });
+
+export const metadata = {
+  title: 'Yafet Media',
+  description: 'Web development tutorials and courses',
+  keywords:
+    'web development, web design, javascript, react, node, angular, vue, html, css',
+}
 
 export default function RootLayout({
   children,
