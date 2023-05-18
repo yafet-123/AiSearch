@@ -8,7 +8,7 @@ const RepoPage = ({ params: { name } }) => {
   // we can make spinner until it load
   return (
     <div className='card'>
-      <Link href='/code/repos' className='btn btn-back bg-gray-600'>
+      <Link href='/code/repos' className='btn btn-back bg-gray-100'>
         Back To Repositories
       </Link>
       <Suspense fallback={<div className="text-2xl">Loading repo...</div>}> 

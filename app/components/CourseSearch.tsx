@@ -16,12 +16,12 @@ const CourseSearch = ({ getSearchResults }) => {
     <form onSubmit={handleSubmit} className='search-form'>
       <input
         type='text'
-        className='search-input'
+        className='search-input text-black'
         placeholder='Search Courses...'
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
-      <button className='search-button' type='submit'>
+      <button className='bg-white text-black hover:bg-blue-500 hover:text-white border-blue-500 rounded-lg p-3 ml-5' type='submit'>
         Search
       </button>
     </form>

@@ -23,7 +23,7 @@ const HomePage = () => {
   if (loading) {
     return <LoadingPage />;
   }
-
+ 
   return (
     <>
       <h1>Welcome To Yafet Meida</h1>
