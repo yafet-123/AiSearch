@@ -19,7 +19,7 @@ const Repo = async ({ name }) => {
 
   return (
     <>
-      <h2 className="text-5xl font-bold">{repo.name}</h2>
+      <h2 className="text-5xl font-bold hover:text-blue-500">{repo.name}</h2>
       <p className="text-lg">{repo.description}</p>
       <div className='card-stats w-full'>
         <div className='card-stat'>
